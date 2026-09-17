@@ -16,16 +16,16 @@ class ProfileModel {
                 'Books' => 'Anything scary',
                 'Heroes' => 'My chemical romance </3'
             ],
-                'friends' => [
-                ['name' => 'blackstar 🌟', 'image' => './assets/images/blackstar.jpg'],
-                ['name' => 'denji 🪚',      'image' => './assets/images/denji.jpg'],
-                ['name' => 'yui 🎸',        'image' => './assets/images/yui.jpg'],
-                ['name' => 'nefer 🐾',      'image' => './assets/images/nefer.jpg'],
-                ['name' => 'mitsuri 🍡',   'image' => './assets/images/mitsuri.jpg'],
-                ['name' => 'maomao 🍃',    'image' => './assets/images/maomao.jpg'],
-                ['name' => 'naruto 🍥',    'image' => './assets/images/naruto.jpg'],
-                ['name' => 'hyuna ✨',     'image' => './assets/images/hyuna.jpg']
-            ]
+    'friends' => [
+    ['name' => 'black☆star 🌟', 'image' => './assets/images/blackstar.jpg', 'url' => 'https://souleater.fandom.com/wiki/Black%E2%98%86Star'],
+    ['name' => 'denji 🪚',      'image' => './assets/images/denji.jpg',     'url' => 'https://chainsaw-man.fandom.com/wiki/Denji'],
+    ['name' => 'yui 🎸',        'image' => './assets/images/yui.jpg',       'url' => 'https://k-on.fandom.com/wiki/Yui_Hirasawa'],
+    ['name' => 'nefer 🐾',      'image' => './assets/images/nefer.jpg',     'url' => 'https://genshin-impact.fandom.com/wiki/Nefer'],
+    ['name' => 'mitsuri 🍡',   'image' => './assets/images/mitsuri.jpg',    'url' => 'https://kimetsu-no-yaiba.fandom.com/wiki/Mitsuri_Kanroji'],
+    ['name' => 'maomao 🍃',    'image' => './assets/images/maomao.jpg',     'url' => 'https://kusuriya.fandom.com/wiki/Maomao'],
+    ['name' => 'naruto 🍥',    'image' => './assets/images/naruto.jpg',     'url' => 'https://naruto.fandom.com/pt-br/wiki/Naruto_Uzumaki'],
+    ['name' => 'hyuna 🕶️',     'image' => './assets/images/hyuna.jpg',      'url' => 'https://alienstage.fandom.com/wiki/Hyuna']
+]
         ];
     }
 }
