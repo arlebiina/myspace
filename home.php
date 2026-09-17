@@ -463,7 +463,7 @@
                                 <div class="image-area">
                                     <div class="image-frame">
                                         <!-- CAMINHO CORRIGIDO: assets/images/perfil.jpg -->
-                                       <img src="./assets/images/perfil.jpg" alt="Profile" class="profile-pic">
+                                       <img src="./assets/images/gyaru.gif" alt="Profile" class="profile-pic">
                                     </div>
                                     <div class="view-more-links">
                                         View My: <a href="#">Pics</a> | <a href="#">Videos</a>
@@ -531,7 +531,7 @@
                             <div class="player-body">
                                 <div class="player-left">
                                     <!-- CAMINHO CORRIGIDO: assets/images/music.jpg -->
-                                    <img src="./assets/images/music.jpg" alt="Capa" class="album-cover">
+                                   <img src="./assets/images/tommyheavenly6.jpg" alt="Tommy Heavenly6" class="album-cover">
                                 </div>
                                 <div class="player-right">
                                     <div class="info-row">
