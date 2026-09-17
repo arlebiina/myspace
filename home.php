@@ -401,6 +401,7 @@
         }
     </style>
 </head>
+
 <body>
 
     <div class="main-wrapper">
@@ -564,32 +565,26 @@
                             <p>My names Ashlyn! My friends call me Ash. I'm a time traveler from the early 2000s (Can't tell you the exact year sorry!) so you bet I was super happy when I found out someone remade myspace like club penguin. I work for a top secret government time travel agency (That I also can't tell you the name of DX) I was sent to the year 2020 on a mission (That I also can't tell you all the details to ;-; top secret n' all XD) and everything was going great!! Until, I accidentally broke the device.. idiot, idiot... but I'm sure soon someone will notice and one of my co workers will come for me and save me! I'm a valued worker afterall!! Other than that I loovveeee music and art and really just anything creative!!</p>
                         </section>
 
-                        <!-- SEÇÃO TOP FRIENDS -->
-                        <section class="top-friends-section">
-                            <h3><?= htmlspecialchars($profile['name'] ?? 'xXx...KandiThrasH...xXx') ?>'s Top Friends</h3>
-                            <div class="friends-grid">
-                                <?php 
-                                /* CAMINHOS CORRIGIDOS PARA A SUBPASTA IMAGES */
-                                $friends = $profile['friends'] ?? [
-                                    ['name' => 'black☆star 🌟', 'image' => 'assets/images/blackstar.jpg'],
-                                    ['name' => 'denji 🪚',      'image' => 'assets/images/denji.jpg'],
-                                    ['name' => 'yui 🎸',        'image' => 'assets/images/yui.jpg'],
-                                    ['name' => 'nefer 🐾',      'image' => 'assets/images/nefer.jpg'],
-                                    ['name' => 'mitsuri 🍡',   'image' => 'assets/images/mitsuri.jpg'],
-                                    ['name' => 'maomao 🍃',    'image' => 'assets/images/maomao.jpg'],
-                                    ['name' => 'naruto 🍥',    'image' => 'assets/images/naruto.jpg']
-                                ];
-                                foreach($friends as $friend): 
-                                ?>
-                                    <div class="friend-card">
-                                        <a href="#" class="friend-name"><?= htmlspecialchars($friend['name']) ?></a>
-                                        <div class="friend-frame">
-                                            <img src="<?= htmlspecialchars($friend['image']) ?>" alt="<?= htmlspecialchars($friend['name']) ?>">
-                                        </div>
-                                    </div>
-                                <?php endforeach; ?>
-                            </div>
-                        </section>
+    <section class="top-friends-section">
+    <h3><?= htmlspecialchars($profile['name'] ?? 'xXx...KandiThrasH...xXx') ?>'s Top Friends</h3>
+    <div class="friends-grid">
+        <?php foreach($profile['friends'] as $friend): ?>
+            <div class="friend-card">
+                <!-- Link no nome -->
+                <a href="<?= htmlspecialchars($friend['url'] ?? '#') ?>" target="_blank" class="friend-name">
+                    <?= htmlspecialchars($friend['name']) ?>
+                </a>
+                
+                <!-- Link na imagem -->
+                <div class="friend-frame">
+                  <a href="<?= htmlspecialchars($friend['url'] ?? '#') ?>" target="_blank">
+                  <img src="<?= htmlspecialchars($friend['image']) ?>" alt="<?= htmlspecialchars($friend['name']) ?>" onerror="this.src='./assets/images/perfil.jpg'">
+                    </a>
+                </div>
+            </div>
+        <?php endforeach; ?>
+    </div>
+</section>s
                     </main>
 
                 </div>
